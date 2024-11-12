@@ -1,6 +1,7 @@
 {
   "name": "@eirikk/portabletext-2-svelte-5",
   "version": "0.1.0-alpha.1",
+  "private": false,
   "homepage": "https://github.com/ampled/svelte-portabletext#readme",
   "bugs": {
     "url": "https://github.com/ampled/svelte-portabletext/issues"
