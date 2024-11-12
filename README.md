@@ -12,7 +12,7 @@ If you're sure that only your app and none of your dependencies depends on `@por
 {
   "dependencies": {
 -    "@portabletext/svelte": "^2"
-+    "@portabletext/svelte": "npm:@eirikk/portabletext-2-svelte-5@alpha.1"
++    "@portabletext/svelte": "npm:@eirikk/portabletext-2-svelte-5@0.1.0-alpha.2"
   }
 }
 ```
@@ -23,9 +23,9 @@ Else use you package manager's override mechanism to ensure that dependencies of
 
 ```json
 {
-	"overrides": {
-		"@portabletext/svelte": "npm:@eirikk/portabletext-2-svelte-5@alpha.1"
-	}
+  "overrides": {
+    "@portabletext/svelte": "npm:@eirikk/portabletext-2-svelte-5@0.1.0-alpha.2"
+  }
 }
 ```
 
@@ -33,11 +33,11 @@ Else use you package manager's override mechanism to ensure that dependencies of
 
 ```json
 {
-	"pnpm": {
-		"overrides": {
-			"@portabletext/svelte": "npm:@eirikk/portabletext-2-svelte-5@alpha.1"
-		}
-	}
+  "pnpm": {
+    "overrides": {
+      "@portabletext/svelte": "npm:@eirikk/portabletext-2-svelte-5@0.1.0-alpha.2"
+    }
+  }
 }
 ```
 
