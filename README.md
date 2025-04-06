@@ -1,3 +1,9 @@
+# Temporary Forked version of @portabletext/svelte
+
+This is a temporary fork of @portabletext/svelte to make it compatible with Svelte 5.0.0.
+The latest version of @portabletext/svelte is **now** compatible with Svelte 5.0.0.
+The original README is below.
+
 # Portable Text renderer for Svelte
 
 Render [Portable Text](https://portabletext.org) block content with [Svelte](https://svelte.dev/) components.
@@ -80,7 +86,7 @@ Example components from above:
   }
 
   // Property custom blocks receive from @portabletext/svelte when rendered
-  let {portableText}: Props = $props();
+  let {portableText}: Props = $props()
 
   let userName = $derived($session?.user?.name || 'person')
 </script>
@@ -107,13 +113,13 @@ Example components from above:
   }
 
   // Property custom marks receive from @portabletext/svelte when rendered
-  let {portableText, children}: Props = $props();
+  let {portableText, children}: Props = $props()
 
   // Remember to make your variables reactive with runes (or $: if using legacy syntax)
   // so that they can reflect prop changes
   // See: https://svelte.dev/docs/svelte/$derived
   // Or if using legacy syntax: https://svelte.dev/docs/svelte/legacy-reactive-assignments
-  let {value} = $derived(portableText);
+  let {value} = $derived(portableText)
   let newWindow = $derived(value.newWindow || false)
 </script>
 
@@ -148,9 +154,7 @@ Example components from above:
 
   const headings = ['h1', 'h2', 'h3', 'h4', 'h5']
 
-  let precededByHeading = $derived(
-    headings.includes(ptBlocks[indexInParent - 1]?.style)
-  )
+  let precededByHeading = $derived(headings.includes(ptBlocks[indexInParent - 1]?.style))
 
   let anchorId = $derived(`heading-${value._key}`)
 </script>
